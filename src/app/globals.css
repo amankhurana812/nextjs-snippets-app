@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -19,3 +19,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #000;
+    background: #fff;
+  }
+  .next-error-h1 {
+    border-right: 1px solid rgba(15, 14, 14, 0.3);
+  }
+} */
