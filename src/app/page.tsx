@@ -1,6 +1,7 @@
 import { db } from "@/db";
 import Link from "next/link";
 
+// export const dynamic = 'force-dynamic';  it will disable cache entirely for this page
 export default async function Home() {
   const snippets = await db.snippet.findMany();
   const renderedSnippets = snippets.map((snippet) => {
